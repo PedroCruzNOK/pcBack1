@@ -1,10 +1,8 @@
 const express = require ('express');
 const app = express();
-app.use(
-    cors({
-      origin: ["http://backend:3000", "http://frontend:5000"],
-    })
-  );
+
+app.use(cors());
+app.options('*', cors())
 
 //configuracion del servidor
 app.set('port', process.env.PORT || 3000);
