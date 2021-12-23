@@ -2,7 +2,7 @@ const express = require ('express');
 const app = express();
 app.use(
     cors({
-      origin: ["http://159.65.171.55:3000", "http://frontend:5000"],
+      origin: ["http://backend:3000", "http://frontend:5000"],
     })
   );
 
